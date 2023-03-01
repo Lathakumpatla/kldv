@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="animals.css">
+</head>
+<body>
+    <div id="sectionHomePage">
+        <div class="home-bg-container">
+            <h1 class="main-heading">Animals</h1>
+            <div class="d-flex flex-row">
+                <img src="https://assets.ccbp.in/frontend/static-website/animals-turtle-img.png" class="first-image"/>
+                <img src="https://assets.ccbp.in/frontend/static-website/animals-raccoon-img.png" class="first-image"/>
+            </div>
+            <div class="d-flex flex-row">
+                <button class="button1" onclick="display('sectionAnimal1')">View Details</button>
+                <button class="button2" onclick="display('sectionAnimal2')">View Details</button>
+                
+            </div>
+            <div class="d-flex flex-row">
+                <img src="https://assets.ccbp.in/frontend/static-website/animals-kangaroo-img.png" class="first-image"/>
+                <img src="https://assets.ccbp.in/frontend/static-website/animals-lion-img.png" class="first-image"/>
+            </div>
+            <div class="d-flex flex-row">
+                <button class="button1" onclick="display('sectionAnimal3')">View Details</button>
+                <button class="button2" onclick="display('sectionAnimal4')">View Details</button>
+                
+            </div>
+        </div>
+    </div>
+    <div id="sectionAnimal1">
+        <div class="turtle-bg-container d-flex flex-column justify-content-end">
+        
+            <p class="turtle-para">Sea turtles</p>
+            <p class="turtle-para1">Sea turtles are reptiles of the order Testudiness.</p>
+            <button class=" button btn btn-primary ml-4" onclick="display('sectionHomePage')">Back</button>
+        
+        </div>
+    </div>
+    <div id="sectionAnimal2">
+        <div class="raccoon-bg-container d-flex flex-column justify-content-end">
+        
+            <p class="raccoon-para">Raccoon</p>
+            <p class="raccoon-para1">Raccoon is a medium-sized mammal native to North America.</p>
+            <button class=" button btn btn-primary ml-4" onclick="display('sectionHomePage')">Back</button>
+        
+        </div>
+    </div>
+    <div id="sectionAnimal3">
+        <div class="kangaroo-bg-container d-flex flex-column justify-content-end">
+        
+            <p class="kangaroo-para">Kangaroos</p>
+            <p class="kangaroo-para1">Kangaroos are large masupials that are found only in Australia.</p>
+            <button class=" button btn btn-primary ml-4"onclick="display('sectionHomePage')">Back</button>
+        
+        </div>
+    </div>
+    <div id="sectionAnimal4">
+        <div class="lion-bg-container d-flex flex-column justify-content-end">
+        
+            <p class="lion-para">Lion</p>
+            <p class="lion-para1">Lions have very sharp eyesight and called excellent hunters.</p>
+            <button class=" button btn btn-primary ml-4" onclick="display('sectionHomePage')">Back</button>
+        
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>   
+</body>
+</html>
+
+
+.home-bg-container{
+    background-color:black;
+    height: 210vh;
+    background-size: cover;
+}
+.main-heading{
+    color:#ffffff;
+    font-size:60px;
+    padding-left:10px;
+    font-weight:70;
+}
+.first-image{
+    height:80vh;
+    width:80vh;
+    margin:20px;
+    border-radius:10px;
+}
+.button1{
+    background-color: blue;
+    color:#ffffff;
+    width:80vh;
+    margin-left:20px;
+    padding:8px;
+    border-radius:6px;
+
+
+}
+.button2{
+    background-color: blue;
+    color: #ffffff;
+    width:80vh;
+    margin-left:40px;
+    padding:8px;
+    border-radius:6px;
+
+}
+.turtle-bg-container{
+    background-image:url("https://assets.ccbp.in/frontend/static-website/animals-turtle-bg.png");
+    height:100vh;
+    
+    background-size:cover;
+    margin-top: 40px;
+}
+.turtle-para{
+    color:#ffffff;
+    font-size:35px;
+    font-weight:100;
+    margin-left:20px;
+}
+.turtle-para1{
+    color:#ffffff;
+    font-size:40px;
+    font-weight:100;
+    margin-left:20px;
+}
+.button{
+    color:#ffffff;
+    margin-left:20px;
+    width:20vh;
+}
+.raccoon-bg-container{
+    background-image:url("https://assets.ccbp.in/frontend/static-website/animals-raccoon-bg.png");
+    height:180vh;
+    width:100vw;
+    background-size:cover;
+    margin-top: 40px;
+}
+.raccoon-para{
+    color:#ffffff;
+    font-size:35px;
+    font-weight:100;
+    margin-left:20px;
+}
+.raccoon-para1{
+    color:#ffffff;
+    font-size:50px;
+    font-weight:100;
+    margin-left:20px;
+}
+.button{
+    color:#ffffff;
+    margin-left:20px;
+    width:20vh;
+    margin-bottom:20px;
+}
+.kangaroo-bg-container{
+    background-image:url("https://assets.ccbp.in/frontend/static-website/animals-kangaroo-bg.png");
+    height:180vh;
+    width:100vw;
+    background-size:cover;
+    margin-top: 40px;
+}
+.kangaroo-para{
+    color:#ffffff;
+    font-size:35px;
+    font-weight:100;
+    margin-left:20px;
+}
+.kangaroo-para1{
+    color:#ffffff;
+    font-size:50px;
+    font-weight:100;
+    margin-left:20px;
+}
+.button{
+    color:#ffffff;
+    margin-left:20px;
+    width:20vh;
+    margin-bottom:20px;
+}
+.lion-bg-container{
+    background-image:url("https://assets.ccbp.in/frontend/static-website/animals-lion-bg.png");
+    height:100vw;
+    width:100vw;
+    background-size:cover;
+    margin-top: 40px;
+}
+.lion-para{
+    color:#ffffff;
+    font-size:35px;
+    font-weight:100;
+    margin-left:20px;
+}
+.lion-para1{
+    color:#ffffff;
+    font-size:50px;
+    font-weight:100;
+    margin-left:20px;
+}
+.button{
+    color:#ffffff;
+    margin-left:20px;
+    width:20vh;
+    margin-bottom:20px;
+}
+
